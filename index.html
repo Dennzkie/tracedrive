@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+    <title>TraceDrive - Concept Defense</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <i class="fas fa-route"></i> TraceDrive
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#problem" class="nav-link">Problem</a></li>
+                <li><a href="#solution" class="nav-link">Solution</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#workflow" class="nav-link">Workflow</a></li>
+                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#relevance" class="nav-link">Relevance</a></li>
+                <li><a href="#stakeholders" class="nav-link">Stakeholders</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon" id="themeIconMoon"></i>
+                        <i class="fas fa-sun" id="themeIconSun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">Capstone Project 2026</div>
+            <h1 class="hero-title reveal">
+                <span class="gradient-text">TraceDrive</span>
+            </h1>
+            <p class="hero-subtitle reveal">A Vehicle Accident Tracking and Records Management System</p>
+            <p class="hero-description reveal">A comprehensive web-based platform designed to streamline vehicle accident documentation, tracking, and investigation management for authorized personnel.</p>
+            <div class="hero-buttons reveal">
+                <a href="#overview" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View Concept
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-star"></i> Explore Features
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About the Project</span>
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-description">TraceDrive is a web-based platform designed to help authorized personnel manage and organize vehicle accident-related records efficiently through a centralized digital system.</p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Centralized Records</h3>
+                    <p>All accident-related data stored in one secure, accessible location for efficient management.</p>
+                </div>
+                <div class="overview-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Accident Tracking</h3>
+                    <p>Real-time monitoring and tracking of accident cases from initial report to resolution.</p>
+                </div>
+                <div class="overview-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle Ownership Monitoring</h3>
+                    <p>Comprehensive vehicle and owner information management for quick identification.</p>
+                </div>
+                <div class="overview-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Investigation Support</h3>
+                    <p>Tools to assist investigators in managing cases, evidence, and generating reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Setting Section -->
+    <section class="section section-alt" id="problem">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The Challenge</span>
+                <h2 class="section-title">Problem Setting</h2>
+                <p class="section-description">Current accident record management faces numerous challenges that hinder efficient investigation and documentation.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Manual Accident Records</h3>
+                    <p>Paper-based documentation leads to errors, loss of data, and inefficient record keeping.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Scattered Documentation</h3>
+                    <p>Records spread across multiple offices and filing systems make retrieval difficult.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Delayed Information Retrieval</h3>
+                    <p>Time-consuming manual searches slow down investigations and decision-making.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <h3>Difficulty Identifying Drivers</h3>
+                    <p>Lack of centralized driver records makes identification challenging during investigations.</p>
+                </div>
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Inefficient Case Tracking</h3>
+                    <p>No systematic way to monitor case progress from report to resolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposed Solution Section -->
+    <section class="section" id="solution">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Approach</span>
+                <h2 class="section-title">Proposed Solution</h2>
+                <p class="section-description">TraceDrive addresses these challenges through a comprehensive digital platform with powerful features.</p>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-number">01</div>
+                    <h3>Centralized Digital Records</h3>
+                    <p>A unified database for all accident-related information accessible to authorized personnel.</p>
+                </div>
+                <div class="solution-card reveal">
+                    <div class="solution-number">02</div>
+                    <h3>Vehicle Plate Number Search</h3>
+                    <p>Instant lookup of vehicle and owner information using plate number queries.</p>
+                </div>
+                <div class="solution-card reveal">
+                    <div class="solution-number">03</div>
+                    <h3>Accident Tracking</h3>
+                    <p>Systematic recording and monitoring of all accident incidents and their status.</p>
+                </div>
+                <div class="solution-card reveal">
+                    <div class="solution-number">04</div>
+                    <h3>Investigator Assignment</h3>
+                    <p>Efficient assignment and management of investigators to specific cases.</p>
+                </div>
+                <div class="solution-card reveal">
+                    <div class="solution-number">05</div>
+                    <h3>Evidence Management</h3>
+                    <p>Secure upload, storage, and organization of evidence files and photographs.</p>
+                </div>
+                <div class="solution-card reveal">
+                    <div class="solution-number">06</div>
+                    <h3>Report Generation</h3>
+                    <p>Automated PDF report generation for documentation and official purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-description">Explore the powerful features that make TraceDrive a comprehensive accident management solution.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Vehicle Plate Number Search</h3>
+                    <p>Quickly search and retrieve vehicle information using plate number queries.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-car-side"></i></div>
+                    <h3>Vehicle & Owner Information</h3>
+                    <p>Manage comprehensive vehicle and owner records in a centralized database.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+                    <h3>Driver Identification Records</h3>
+                    <p>Maintain detailed driver profiles for quick identification during investigations.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-car-crash"></i></div>
+                    <h3>Accident Incident Recording</h3>
+                    <p>Document accident details including location, time, and involved parties.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Evidence & Photo Upload</h3>
+                    <p>Securely upload and manage evidence files, photos, and supporting documents.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Investigation Status Tracking</h3>
+                    <p>Monitor case progress from initial report through investigation to resolution.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Investigator Assignment</h3>
+                    <p>Assign and manage investigators for specific accident cases efficiently.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-filter"></i></div>
+                    <h3>Search & Filtering System</h3>
+                    <p>Advanced search and filtering capabilities for quick data retrieval.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h3>PDF Report Generation</h3>
+                    <p>Generate professional PDF reports for documentation and official use.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                    <h3>User Login & Management</h3>
+                    <p>Secure authentication and role-based access control for system users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Workflow Section -->
+    <section class="section" id="workflow">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Process Flow</span>
+                <h2 class="section-title">System Workflow</h2>
+                <p class="section-description">A streamlined process from incident report to case resolution.</p>
+            </div>
+            <div class="workflow-timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Enter Vehicle Plate Number</h3>
+                        <p>Investigator inputs the vehicle plate number into the system to begin the process.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Retrieve Vehicle & Owner Records</h3>
+                        <p>System automatically retrieves associated vehicle and owner information.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Record Accident Information</h3>
+                        <p>Detailed accident information is documented including location, time, and circumstances.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Identify Driver Information</h3>
+                        <p>Driver details are identified and linked to the accident record.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>5</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Upload Evidence</h3>
+                        <p>Photos, documents, and other evidence are securely uploaded to the case file.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>6</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Monitor Case Progress</h3>
+                        <p>Investigator tracks the case status and updates throughout the investigation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <span>7</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Generate Reports</h3>
+                        <p>Comprehensive PDF reports are generated for official documentation and records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Background Section -->
+    <section class="section section-alt" id="techstack">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Technology</span>
+                <h2 class="section-title">Technical Background</h2>
+                <p class="section-description">Built with proven and reliable technologies for optimal performance and maintainability.</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category reveal">
+                    <h3 class="tech-category-title">
+                        <i class="fas fa-palette"></i> Frontend
+                    </h3>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category reveal">
+                    <h3 class="tech-category-title">
+                        <i class="fas fa-server"></i> Backend
+                    </h3>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category reveal">
+                    <h3 class="tech-category-title">
+                        <i class="fas fa-database"></i> Database
+                    </h3>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relevance & Feasibility Section -->
+    <section class="section" id="relevance">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Justification</span>
+                <h2 class="section-title">Relevance & Feasibility</h2>
+                <p class="section-description">Why TraceDrive is both relevant and achievable as a capstone project.</p>
+            </div>
+            <div class="relevance-grid">
+                <div class="relevance-card reveal">
+                    <div class="relevance-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Relevance to Accident Management</h3>
+                    <p>Addresses a real-world need for efficient digital accident record management in the Philippines, supporting law enforcement and road safety initiatives.</p>
+                </div>
+                <div class="relevance-card reveal">
+                    <div class="relevance-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Feasibility for BSIT Students</h3>
+                    <p>Utilizes technologies covered in the BSIT curriculum including PHP, MySQL, and Bootstrap, making it achievable within academic constraints.</p>
+                </div>
+                <div class="relevance-card reveal">
+                    <div class="relevance-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Realistic Scope</h3>
+                    <p>Well-defined features and clear boundaries ensure the project can be completed within the capstone timeline without scope creep.</p>
+                </div>
+                <div class="relevance-card reveal">
+                    <div class="relevance-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Academic Appropriateness</h3>
+                    <p>Demonstrates key competencies in web development, database management, and system design expected of BSIT graduates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stakeholders Section -->
+    <section class="section section-alt" id="stakeholders">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Key Players</span>
+                <h2 class="section-title">Stakeholders</h2>
+                <p class="section-description">The key organizations and individuals who benefit from TraceDrive.</p>
+            </div>
+            <div class="stakeholders-grid">
+                <div class="stakeholder-card reveal">
+                    <div class="stakeholder-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Philippine National Police</h3>
+                    <p>Primary users for accident investigation and records management.</p>
+                </div>
+                <div class="stakeholder-card reveal">
+                    <div class="stakeholder-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Traffic Investigators</h3>
+                    <p>Field personnel who document and investigate accident cases.</p>
+                </div>
+                <div class="stakeholder-card reveal">
+                    <div class="stakeholder-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Local Government Units</h3>
+                    <p>Government bodies overseeing road safety and traffic management.</p>
+                </div>
+                <div class="stakeholder-card reveal">
+                    <div class="stakeholder-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Road Safety Personnel</h3>
+                    <p>Officials responsible for implementing road safety measures.</p>
+                </div>
+                <div class="stakeholder-card reveal">
+                    <div class="stakeholder-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Vehicle Owners</h3>
+                    <p>Citizens whose vehicle records are managed within the system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-route"></i> TraceDrive</h3>
+                    <p>A Vehicle Accident Tracking and Records Management System</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Researchers</h4>
+                    <p>BSIT Capstone Group</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Department</h4>
+                    <p>Bachelor of Science in Information Technology</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Connect</h4>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TraceDrive. Capstone Concept Defense Presentation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
